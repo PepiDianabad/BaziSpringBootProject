@@ -27,7 +27,7 @@ public class DataSourceConfig {
         dataSource.setUrl(url);
         dataSource.setUsername(username);
         dataSource.setPassword(password);
-        // Не забравяйте да настроите driver-class-name за вашата база данни, например:
+        
         // dataSource.setDriverClassName("org.postgresql.Driver");
 
         scanner.close();
