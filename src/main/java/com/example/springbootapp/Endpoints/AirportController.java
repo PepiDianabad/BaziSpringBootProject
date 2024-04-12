@@ -42,7 +42,7 @@ public class AirportService {
         List<Airport> filteredAirports = new ArrayList<>();
 
         for (String countryIso2Code : airportFilter.getCountryIso2Codes()) {
-            Country country = CountryRepository.findByIso2CountryCode(countryIso2Code); // Предполагаме, че имате репозитори за Country и City
+            Country country = CountryRepository.findByIso2CountryCode(countryIso2Code);
             if (country != null) {
                 for (City city : country.getCities()) {
                     for (Airport airport : city.getAirports()) {
